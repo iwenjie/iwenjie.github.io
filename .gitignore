@@ -1,2 +1,5 @@
 /node_modules/
 /.deploy_git/
+# 主题的github配置
+/themes/next/.git
+/themes/next/.github
