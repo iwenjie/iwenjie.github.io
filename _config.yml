@@ -3,13 +3,13 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: QX-FE
-subtitle: 群星金融网
-description: 两个黄鹂鸣翠柳，一群程序单身狗！ 
-author: 群星金融前端团队
+title: <span style='color:red'>❤❤❤❤❤</span>
+subtitle: 
+description: 两个黄鹂鸣翠柳，一只程序单身狗！ 
+author: ☺☺☺☺☺
 language: zh-Hans
 timezone:
-avatar: /images/head.png
+avatar: /images/head.jpg
 duoshuo_shortname: iqunxing
 
 # Make duoshuo show UA
@@ -23,7 +23,7 @@ duoshuo_info:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://qunxing-fe.github.io/
+url: http://iwenjie.github.io/
 root: /blog/
 permalink: html/:title.html
 permalink_defaults:
@@ -80,7 +80,7 @@ theme: next
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: https://github.com/QunXing-FE/qunxing-FE.github.io.git
+  repo: https://github.com/iwenjie/iwenjie.github.io.git
   branch: master
   message: 
 
