@@ -24,7 +24,7 @@ duoshuo_info:
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 url: http://qunxing-fe.github.io/
-root: /
+root: /blog/
 permalink: html/:title.html
 permalink_defaults:
 
