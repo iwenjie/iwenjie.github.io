@@ -68,7 +68,7 @@
 <link href="/blog/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="文档,总结," />
+  <meta name="keywords" content="文档," />
 
 
 
@@ -84,16 +84,16 @@
 
 
 
-<meta name="description" content="firebug常见报错总结">
+<meta name="description" content="收银台系统目前是独立于1000应用（但是仍然发布在home.iqunxing.com下）的为群星业务提供支付功能的系统。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="firebug常见报错总结">
-<meta property="og:url" content="http://iwenjie.github.io/html/firebug-error.html">
+<meta property="og:title" content="收银台前端设计文档">
+<meta property="og:url" content="http://iwenjie.github.io/html/cashier-FE-doc.html">
 <meta property="og:site_name" content="❤❤❤❤❤">
-<meta property="og:description" content="firebug常见报错总结">
-<meta property="og:updated_time" content="2016-07-24T09:46:26.549Z">
+<meta property="og:description" content="收银台系统目前是独立于1000应用（但是仍然发布在home.iqunxing.com下）的为群星业务提供支付功能的系统。">
+<meta property="og:updated_time" content="2016-08-01T04:45:22.429Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="firebug常见报错总结">
-<meta name="twitter:description" content="firebug常见报错总结">
+<meta name="twitter:title" content="收银台前端设计文档">
+<meta name="twitter:description" content="收银台系统目前是独立于1000应用（但是仍然发布在home.iqunxing.com下）的为群星业务提供支付功能的系统。">
 
 
 
@@ -114,9 +114,9 @@
 
 
 
-  <link rel="canonical" href="http://iwenjie.github.io/html/firebug-error.html"/>
+  <link rel="canonical" href="http://iwenjie.github.io/html/cashier-FE-doc.html"/>
 
-  <title> firebug常见报错总结 | ❤❤❤❤❤ </title>
+  <title> 收银台前端设计文档 | ❤❤❤❤❤ </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -276,7 +276,7 @@
             
             
               
-                firebug常见报错总结
+                收银台前端设计文档
               
             
           </h1>
@@ -288,8 +288,8 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-07-24T16:22:48+08:00" content="2016-07-24">
-              2016-07-24
+            <time itemprop="dateCreated" datetime="2016-08-01T16:22:48+08:00" content="2016-08-01">
+              2016-08-01
             </time>
           </span>
 
@@ -309,18 +309,6 @@
 
                 
                 
-                  ， 
-                
-
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/blog/categories/文档/总结/" itemprop="url" rel="index">
-                    <span itemprop="name">总结</span>
-                  </a>
-                </span>
-
-                
-                
 
               
             </span>
@@ -330,8 +318,8 @@
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/blog/html/firebug-error.html#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="html/firebug-error.html" itemprop="commentsCount"></span>
+                <a href="/blog/html/cashier-FE-doc.html#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="html/cashier-FE-doc.html" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -354,11 +342,11 @@
       
 
       
-        <p>firebug常见报错总结<br><a id="more"></a></p>
-<p>npm init 创建一个package.json文件  <a href="http://www.mujiang.info/translation/npmjs/files/package.json.html" target="_blank" rel="external">http://www.mujiang.info/translation/npmjs/files/package.json.html</a> <a href="http://my.oschina.net/u/1992917/blog/523046" target="_blank" rel="external">http://my.oschina.net/u/1992917/blog/523046</a></p>
-<p>npm install module-name -save 自动把模块和版本号添加到dependencies部分<br>npm install module-name -save-dve 自动把模块和版本号添加到devdependencies部分</p>
-<p>npm -g install npm</p>
-
+        <p>收银台系统目前是独立于1000应用（但是仍然发布在home.iqunxing.com下）的为群星业务提供支付功能的系统。<br><a id="more"></a></p>
+<h3 id="目录结构"><a href="#目录结构" class="headerlink" title="目录结构"></a>目录结构</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">└─iqunxing-cashier</div><div class="line">  ├─doc                                </div><div class="line">  └─iqunxing-cashier-webapp</div><div class="line">    └─src                         </div><div class="line">      └─main </div><div class="line">        ├─java               </div><div class="line">        ├─resources               </div><div class="line">        ├─scripts              </div><div class="line">		└─webapp</div></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div></pre></td><td class="code"><pre><div class="line">└─ webapp</div><div class="line">  ├─ cashier </div><div class="line">  │  ├─ css  </div><div class="line">  │  │  ├─ base                             <span class="comment"># 底层CSS</span></div><div class="line">  │  │  ├─ fonts                            <span class="comment"># 字体文件</span></div><div class="line">  │  │  └─ page                             <span class="comment"># 页面层CSS</span></div><div class="line">  │  ├─ images  </div><div class="line">  │  │  ├─ cashier  </div><div class="line">  │  │  ├─ icon                             <span class="comment">#</span></div><div class="line">  │  │  ├─ loading                          <span class="comment">#</span></div><div class="line">  │  │  ├─ logo                             <span class="comment">#</span></div><div class="line">  │  │  ├─ modal                            <span class="comment"># 弹窗里的相关图片资源</span></div><div class="line">  │  │  └─ payment                          <span class="comment">#</span></div><div class="line">  │  ├─ js                                  <span class="comment">#</span></div><div class="line">  │  │  ├─ base</div><div class="line">  │  │  │  ├─ bootstrap.min.js              <span class="comment">#</span></div><div class="line">  │  │  │  ├─ jquery-1.11.2.min.js          <span class="comment">#</span></div><div class="line">  │  │  │  ├─ jquery-validate.js            <span class="comment"># 表单验证插件</span></div><div class="line">  │  │  │  └─ util.js                       <span class="comment"># 封装的一些工具函数</span></div><div class="line">  │  │  └─ page </div><div class="line">  │  │     ├─ cashier.js                    <span class="comment"># 收银台主业务流程js</span></div><div class="line">  │  │     ├─ getBankList.js                <span class="comment"># 收银台主页一些服务js</span></div><div class="line">  │  │     └─ instant-pay.js                <span class="comment"># 快捷支付相关js</span></div><div class="line">  │  ├─ cashier-modal.html                  <span class="comment"># 收银台弹框相关内容静态资源</span></div><div class="line">  │  ├─ error.html                </div><div class="line">  │  ├─ redirect.html                       <span class="comment">#</span></div><div class="line">  │  ├─ test.html                           <span class="comment"># 本地测试收银台页面</span></div><div class="line">  │  └─ wait.html                           <span class="comment">#</span></div><div class="line">  └─ WEB-INF</div><div class="line">     └─ jsp                         </div><div class="line">        ├─ cashier.jso             </div><div class="line">        ├─ instant-pay.jsp             </div><div class="line">        ├─ result.jsp               </div><div class="line">	    └─ transfering.jsp</div></pre></td></tr></table></figure>
+<h3 id="代码结构"><a href="#代码结构" class="headerlink" title="代码结构"></a>代码结构</h3><h5 id="getBankList-所提供的服务"><a href="#getBankList-所提供的服务" class="headerlink" title="getBankList 所提供的服务"></a>getBankList 所提供的服务</h5><p>1，渲染历史银行服务</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line">renderPersonUsedBanks = &#123;</div><div class="line">	data:<span class="string">''</span>,</div><div class="line">	init:<span class="string">''</span>,</div><div class="line">	formatBankInfo:<span class="string">''</span>,</div><div class="line">	formatBankType:<span class="string">''</span>,</div><div class="line">	getLimitDetail:<span class="string">''</span>,</div><div class="line">	setLimitDetail:<span class="string">''</span>,</div><div class="line">	renderBankList:<span class="string">''</span>,</div><div class="line">	createPersonUsedBanks:<span class="string">''</span>,</div><div class="line">	availIdenBank:<span class="string">''</span>,</div><div class="line">	availPersonBank:<span class="string">''</span>,</div><div class="line">	availCompanyBank:<span class="string">''</span>,</div><div class="line">	initIdenUsedBank:<span class="string">''</span>,</div><div class="line">	initCompanyUsedBank:<span class="string">''</span>,</div><div class="line">	initPersonUsedBank:<span class="string">''</span></div><div class="line">&#125;</div></pre></td></tr></table></figure>
       
     </div>
 
@@ -403,8 +391,6 @@
           
             <a href="/blog/tags/文档/" rel="tag">#文档</a>
           
-            <a href="/blog/tags/总结/" rel="tag">#总结</a>
-          
         </div>
       
 
@@ -412,17 +398,13 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/blog/html/npm.html" rel="next" title="npm命令">
-                <i class="fa fa-chevron-left"></i> npm命令
+              <a href="/blog/html/firebug-error.html" rel="next" title="firebug常见报错总结">
+                <i class="fa fa-chevron-left"></i> firebug常见报错总结
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/blog/html/cashier-FE-doc.html" rel="prev" title="收银台前端设计文档">
-                收银台前端设计文档 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -448,8 +430,8 @@
           
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="html/firebug-error.html"
-           data-title="firebug常见报错总结" data-url="http://iwenjie.github.io/blog/html/firebug-error.html">
+      <div class="ds-thread" data-thread-key="html/cashier-FE-doc.html"
+           data-title="收银台前端设计文档" data-url="http://iwenjie.github.io/blog/html/cashier-FE-doc.html">
       </div>
     
   </div>
@@ -583,7 +565,7 @@
               
             
             
-              <p class="post-toc-empty">此文章未包含目录</p>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#目录结构"><span class="nav-number">1.</span> <span class="nav-text">目录结构</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#代码结构"><span class="nav-number">2.</span> <span class="nav-text">代码结构</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#getBankList-所提供的服务"><span class="nav-number">2.0.1.</span> <span class="nav-text">getBankList 所提供的服务</span></a></li></ol></li></ol></li></ol></div>
             
           </div>
         </section>
