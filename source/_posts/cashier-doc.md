@@ -48,7 +48,7 @@ tags:
         ├─ cashier.jso                      # 收银台主页面
         ├─ instant-pay.jsp                  # 快捷支付页面
         ├─ result.jsp                       # 支付结果页面
-	      └─ transfering.jsp                  # 转账中页面
+        └─ transfering.jsp                  # 转账中页面
 ```
 ### 代码运行环境
 
@@ -57,6 +57,10 @@ tags:
 
 *gulp使用介绍：*
 目前gulp只使用加版本号功能，进入webapp/cashier文件夹 执行`gulp`
+*warning*  如果有修改到`/cashier/cashier-modal.html` 避免页面缓存务必要加上版本号
+```javascript
+$('.modalList').load('/cashier/cashier-modal.html?v=2016080501');
+```
 
 ### 百度分析
 
