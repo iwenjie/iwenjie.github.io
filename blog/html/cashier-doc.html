@@ -90,7 +90,7 @@
 <meta property="og:url" content="http://iwenjie.github.io/html/cashier-doc.html">
 <meta property="og:site_name" content="❤❤❤❤❤">
 <meta property="og:description" content="收银台系统目前是独立于1000应用（但是仍然发布在home.iqunxing.com下）的为群星业务提供支付功能的系统。">
-<meta property="og:updated_time" content="2016-08-05T09:03:35.523Z">
+<meta property="og:updated_time" content="2016-08-05T09:09:16.155Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="收银台前端设计文档">
 <meta name="twitter:description" content="收银台系统目前是独立于1000应用（但是仍然发布在home.iqunxing.com下）的为群星业务提供支付功能的系统。">
@@ -354,16 +354,18 @@
 <h3 id="前端页面交互流程"><a href="#前端页面交互流程" class="headerlink" title="前端页面交互流程"></a>前端页面交互流程</h3><p>进入页面默认选择一种支付方式(优先级：群星账户&gt;第三方支付账户第一个)，<br>切换支付方式，同时切换支付参数(支付参数说明见代码中_PAY_PARAM)，<br>如果没有符合支付条件的群星账户和历史支付账户则显示选择银行的列表</p>
 <h3 id="前端支付流程"><a href="#前端支付流程" class="headerlink" title="前端支付流程"></a>前端支付流程</h3><p>群星支付 &gt; gotoPay</p>
 <p>第三方支付 &gt; 获取支付渠道(payment_channel) &gt; gotoPay</p>
-<p>gotoPay &gt; 失败</p>
-<pre><code>&gt; 成功
+<p>gotoPay </p>
+<pre><code>&gt; 失败
+&gt; 成功
 &gt; 处理中
 &gt; 支付中 &gt; getPayResult &gt; gotoBank
 &gt; 异常处理
-</code></pre><p>getPayResult &gt; 成功</p>
-<pre><code>&gt; 转账中 &gt; getPayResult
+</code></pre><p>getPayResult </p>
+<pre><code>&gt; 成功
+&gt; 转账中 &gt; getPayResult
 &gt; 失败
 &gt; 异常处理 &gt; getPayResult
-</code></pre><h3 id="cashier-modal-html提供的模态框服务说明"><a href="#cashier-modal-html提供的模态框服务说明" class="headerlink" title="cashier-modal.html提供的模态框服务说明"></a>cashier-modal.html提供的模态框服务说明</h3><figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">#modal_paymentToAccountTip  //还款到账时间提醒模态框</div><div class="line">#modal_payWait              //支付等待中模态框</div><div class="line">#modal_paySuccess           //支付成功模态框</div><div class="line">#modal_payFail              //支付失败模态框</div><div class="line">#modal_paying               //支付中模态框</div><div class="line">#modal_deleteCard           //删除银行卡提示模态框</div></pre></td></tr></table></figure>
+</code></pre><h3 id="cashier-modal-html提供的模态框服务说明"><a href="#cashier-modal-html提供的模态框服务说明" class="headerlink" title="cashier-modal.html提供的模态框服务说明"></a>cashier-modal.html提供的模态框服务说明</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="comment">#modal_paymentToAccountTip  # 还款到账时间提醒模态框</span></div><div class="line"><span class="comment">#modal_payWait              # 支付等待中模态框</span></div><div class="line"><span class="comment">#modal_paySuccess           # 支付成功模态框</span></div><div class="line"><span class="comment">#modal_payFail              # 支付失败模态框</span></div><div class="line"><span class="comment">#modal_paying               # 支付中模态框</span></div><div class="line"><span class="comment">#modal_deleteCard           # 删除银行卡提示模态框</span></div></pre></td></tr></table></figure>
       
     </div>
 

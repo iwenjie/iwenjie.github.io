@@ -126,24 +126,26 @@ renderPersonUsedBanks = {
 
 第三方支付 > 获取支付渠道(payment_channel) > gotoPay
 
-gotoPay > 失败
+gotoPay 
+        > 失败
         > 成功
         > 处理中
         > 支付中 > getPayResult > gotoBank
         > 异常处理
 
-getPayResult > 成功
+getPayResult 
+             > 成功
              > 转账中 > getPayResult
              > 失败
              > 异常处理 > getPayResult
 
 ### cashier-modal.html提供的模态框服务说明
 
-```javascript
-#modal_paymentToAccountTip  //还款到账时间提醒模态框
-#modal_payWait              //支付等待中模态框
-#modal_paySuccess           //支付成功模态框
-#modal_payFail              //支付失败模态框
-#modal_paying               //支付中模态框
-#modal_deleteCard           //删除银行卡提示模态框
+```bash
+#modal_paymentToAccountTip  # 还款到账时间提醒模态框
+#modal_payWait              # 支付等待中模态框
+#modal_paySuccess           # 支付成功模态框
+#modal_payFail              # 支付失败模态框
+#modal_paying               # 支付中模态框
+#modal_deleteCard           # 删除银行卡提示模态框
 ```
