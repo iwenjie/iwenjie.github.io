@@ -7,7 +7,7 @@ tags:
   - 文档
 ---
 
-收银台系统目前是独立于1000应用（但是仍然发布在home.iqunxing.com下）的为群星业务提供支付功能的系统。
+收银台系统目前是独立于1001应用（但是仍然发布在home.iqunxing.com下）的为群星业务提供支付功能的系统。
 <!--more-->
 
 ### 目录结构
@@ -66,11 +66,15 @@ $('.modalList').load('/cashier/cashier-modal.html?v=2016080501');
 
 百度分析账号：薄荷少年半心凉丶
 密码：***********
+统计代码：
+*事件跟踪：* `_hmt.push(['_setCustomVar', 2, 'browser', navigator.userAgent, 1]);`
+*自定义变量：* `_hmt.push(['_trackEvent', '按钮', 'click', '点击删除银行卡']);`
+
 统计内容：
 
 ### 代码结构
 
-##### Util 所提供的工具函数
+#### Util 所提供的工具函数
 ```javascript
 isNumber();
 isEmpty();
@@ -90,27 +94,32 @@ maskInit();               // 遮罩
 resetInit();              // 重置一些check、radio的默认样式
 ```
 
-##### getBankList 所提供的服务
-1，渲染历史银行服务
+#### getBankList 所提供的服务
+- 立即支付状态管理服务
+- 渲染历史银行服务
 
 ```javascript
 renderPersonUsedBanks = {
-	data:'',  // 数据缓存
-	init:'',  // 入口
-	formatBankInfo:'',  // 处理银行信息
-	formatBankType:'',  // 处理银行类型
-	getLimitDetail:'',  // 获取额度信息
-	setLimitDetail:'',  // 设置额度信息
-	renderBankList:'',  // 渲染列表
+	data:'',                   // 数据缓存
+	init:'',                   // 入口
+	formatBankInfo:'',         // 处理银行信息
+	formatBankType:'',         // 处理银行类型
+	getLimitDetail:'',         // 获取额度信息
+	setLimitDetail:'',         // 设置额度信息
+	renderBankList:'',         // 渲染列表
 	createPersonUsedBanks:'',  // V2版本暂时不调用
-	availIdenBank:'',  // V2版本暂时不调用
-	availPersonBank:'',  // V2版本暂时不调用
-	availCompanyBank:'',  // V2版本暂时不调用
-	initIdenUsedBank:'',  // V2版本暂时不调用
-	initCompanyUsedBank:'',  // V2版本暂时不调用
-	initPersonUsedBank:''  // V2版本暂时不调用
+	availIdenBank:'',          // V2版本暂时不调用
+	availPersonBank:'',        // V2版本暂时不调用
+	availCompanyBank:'',       // V2版本暂时不调用
+	initIdenUsedBank:'',       // V2版本暂时不调用
+	initCompanyUsedBank:'',    // V2版本暂时不调用
+	initPersonUsedBank:''      // V2版本暂时不调用
 }
 ```
+- 渲染快捷支付服务
+- 渲染个人网银服务
+- 渲染企业网银服务
+
 
 ### 前端页面渲染流程
 
