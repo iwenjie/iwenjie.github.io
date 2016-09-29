@@ -90,7 +90,7 @@
 <meta property="og:url" content="http://iwenjie.github.io/html/cashier-doc.html">
 <meta property="og:site_name" content="❤❤❤❤❤">
 <meta property="og:description" content="收银台系统目前是独立于1001应用（但是仍然发布在home.iqunxing.com下）的为群星业务提供支付功能的系统。">
-<meta property="og:updated_time" content="2016-08-12T06:53:39.578Z">
+<meta property="og:updated_time" content="2016-08-18T03:30:11.760Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="收银台前端设计文档">
 <meta name="twitter:description" content="收银台系统目前是独立于1001应用（但是仍然发布在home.iqunxing.com下）的为群星业务提供支付功能的系统。">
@@ -375,6 +375,14 @@
 &gt; 失败
 &gt; 异常处理 &gt; getPayResult
 </code></pre><h3 id="cashier-modal-html提供的模态框服务说明"><a href="#cashier-modal-html提供的模态框服务说明" class="headerlink" title="cashier-modal.html提供的模态框服务说明"></a>cashier-modal.html提供的模态框服务说明</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="comment">#modal_paymentToAccountTip  # 还款到账时间提醒模态框</span></div><div class="line"><span class="comment">#modal_payWait              # 支付等待中模态框</span></div><div class="line"><span class="comment">#modal_paySuccess           # 支付成功模态框</span></div><div class="line"><span class="comment">#modal_payFail              # 支付失败模态框</span></div><div class="line"><span class="comment">#modal_paying               # 支付中模态框</span></div><div class="line"><span class="comment">#modal_deleteCard           # 删除银行卡提示模态框</span></div></pre></td></tr></table></figure>
+<ul>
+<li>付款成功</li>
+<li>付款成功 》重新支付 》已付款成功</li>
+<li>付款失败</li>
+<li>付款失败 》重新支付 》付款成功</li>
+<li>付款失败 》重新支付 》失败 》超时五分钟 》重新支付 》提醒订单过期</li>
+</ul>
+
       
     </div>
 
@@ -426,7 +434,7 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/blog/html/dcf-doc.html" rel="next" title="firebug常见报错总结">
+              <a href="/blog/html/firebug-error.html" rel="next" title="firebug常见报错总结">
                 <i class="fa fa-chevron-left"></i> firebug常见报错总结
               </a>
             
@@ -434,7 +442,7 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/blog/html/firebug-error.html" rel="prev" title="dcf doc">
+              <a href="/blog/html/dcf-doc.html" rel="prev" title="dcf doc">
                 dcf doc <i class="fa fa-chevron-right"></i>
               </a>
             
@@ -508,7 +516,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/blog/archives">
-              <span class="site-state-item-count">9</span>
+              <span class="site-state-item-count">10</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>

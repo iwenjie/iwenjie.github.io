@@ -33,7 +33,7 @@ H6: ###### 标题示例 6
 加粗: **Bold**
 斜体字: *Italics*
 删除线: ~~text~~
-列表: * 添加星号成为一个新的列表项。
+列表: * 添加星号或 - 成为一个新的列表项。
 引用: > 引用内容
 内嵌代码: `alert('Hello World');`
 画水平线(HR): --------
@@ -41,9 +41,14 @@ H6: ###### 标题示例 6
 ##### 示例:
 [链接百度](http://www.baidu.com) **加粗的文字** *斜体的文字* ~~带删除线的文字~~
 
-* 列表1
-* 列表2
-* 列表3
+* *号列表1
+* *号列表2
+- -号列表3
+- -号列表4
+  * 二级*号列表1
+  - 二级*号列表2
+  * 二级-号列表3
+  - 二级-号列表4
 
 > 这是引用内容
 
@@ -52,3 +57,48 @@ H6: ###### 标题示例 6
 下面画水平线(HR)
 
 --------
+
+### 图片和代码相关:
+
+使用代码`![Image](https://octodex.github.com/images/yaktocat.png)`
+
+eg:
+![Image](https://octodex.github.com/images/yaktocat.png)
+
+普通代码：
+```
+	` ` `
+		you code(使用时去除空格)
+	` ` `
+
+```
+
+eg:
+```
+if (isAwesome){
+  return true
+}
+```
+
+指定语言类型：
+```
+	` ` `javascript
+		you code(使用时去除空格)
+	` ` `
+
+```
+
+eg:
+```javascript
+if (isAwesome){
+  return true
+}
+```
+##### emoji表情:
+
+`:smile:` `:heart_eyes:` `:flushed:` `:stuck_out_tongue_winking_eye:` `:stuck_out_tongue_winking_eye:`
+
+eg：
+:smile: :heart_eyes: :flushed: :stuck_out_tongue_winking_eye: :stuck_out_tongue_winking_eye:
+注：有些markdown解析引擎不支持
+ [查看更多emoji表情](http://www.emoji-cheat-sheet.com/) 
