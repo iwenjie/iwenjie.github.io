@@ -12,3 +12,14 @@ tags:
 firebug常见报错总结
 <!--more-->
 
+```
+ReferenceError: a is not defined     a 未定义
+
+console.info(a);
+
+SyntaxError: illegal character       标点符号错误
+
+a++；
+
+
+```
