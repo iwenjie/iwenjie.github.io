@@ -68,7 +68,7 @@
 <link href="/blog/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="文档," />
+  <meta name="keywords" content="文档,工具," />
 
 
 
@@ -84,16 +84,16 @@
 
 
 
-<meta name="description" content="dcf doc">
+<meta name="description" content="let 允许把变量的作用域限制在块级域中, const 这个声明创建一个常量,可以全局或局部的函数声明。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="dcf doc">
-<meta property="og:url" content="http://iwenjie.github.io/html/dcf-doc.html">
+<meta property="og:title" content="ES6中let、const和var的区别">
+<meta property="og:url" content="http://iwenjie.github.io/html/es61.html">
 <meta property="og:site_name" content="❤❤❤❤❤">
-<meta property="og:description" content="dcf doc">
-<meta property="og:updated_time" content="2016-09-01T08:55:12.951Z">
+<meta property="og:description" content="let 允许把变量的作用域限制在块级域中, const 这个声明创建一个常量,可以全局或局部的函数声明。">
+<meta property="og:updated_time" content="2017-04-24T08:14:44.265Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="dcf doc">
-<meta name="twitter:description" content="dcf doc">
+<meta name="twitter:title" content="ES6中let、const和var的区别">
+<meta name="twitter:description" content="let 允许把变量的作用域限制在块级域中, const 这个声明创建一个常量,可以全局或局部的函数声明。">
 
 
 
@@ -114,9 +114,9 @@
 
 
 
-  <link rel="canonical" href="http://iwenjie.github.io/html/dcf-doc.html"/>
+  <link rel="canonical" href="http://iwenjie.github.io/html/es61.html"/>
 
-  <title> dcf doc | ❤❤❤❤❤ </title>
+  <title> ES6中let、const和var的区别 | ❤❤❤❤❤ </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -276,7 +276,7 @@
             
             
               
-                dcf doc
+                ES6中let、const和var的区别
               
             
           </h1>
@@ -288,8 +288,8 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-08-16T16:22:48+08:00" content="2016-08-16">
-              2016-08-16
+            <time itemprop="dateCreated" datetime="2017-05-01T16:22:48+08:00" content="2017-05-01">
+              2017-05-01
             </time>
           </span>
 
@@ -309,6 +309,18 @@
 
                 
                 
+                  ， 
+                
+
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/blog/categories/文档/工具/" itemprop="url" rel="index">
+                    <span itemprop="name">工具</span>
+                  </a>
+                </span>
+
+                
+                
 
               
             </span>
@@ -318,8 +330,8 @@
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/blog/html/dcf-doc.html#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="html/dcf-doc.html" itemprop="commentsCount"></span>
+                <a href="/blog/html/es61.html#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="html/es61.html" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -342,23 +354,26 @@
       
 
       
-        <p>dcf doc<br><a id="more"></a></p>
-<h3 id="dcf相关资源目录结构"><a href="#dcf相关资源目录结构" class="headerlink" title="dcf相关资源目录结构"></a>dcf相关资源目录结构</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line">└─ webapp                                   <span class="comment"># 前端资源文件夹</span></div><div class="line">  ├─ views</div><div class="line">  │  ├─ dcf </div><div class="line">  │  │  └─ index                      </div><div class="line">  │  │     └─ index.jsp                     <span class="comment"># 装饰器配置</span></div><div class="line">  └─ WEB-INF</div><div class="line">     ├─ layouts                             <span class="comment"># 布局用到的一些公用模板  </span></div><div class="line">     │  ├─ includes                         <span class="comment"># 基础组件js</span></div><div class="line">     │  │  ├─ dcfHeader.html                <span class="comment"># 头部</span></div><div class="line">     │  │  ├─ dcfLeftBar.html               <span class="comment"># 侧边栏</span></div><div class="line">     │  │  ├─ headerInvite.jsp              <span class="comment"># </span></div><div class="line">     │  │  └─ footerSearch.jsp              <span class="comment">#                        </span></div><div class="line">     │  ├─ dcf-new.jsp                      <span class="comment"># 新版首页装饰器</span></div><div class="line">     │  ├─ dcf.jsp                          <span class="comment"># </span></div><div class="line">     │  └─ dcfIndex.jsp                     <span class="comment"># </span></div><div class="line">     └─ decorators.xml                      <span class="comment"># 装饰器配置</span></div></pre></td></tr></table></figure>
-<h3 id="header-头部"><a href="#header-头部" class="headerlink" title="header 头部"></a>header 头部</h3><blockquote>
-<p>资源: <code>layouts/includes/dcfLeftBar.html</code></p>
-</blockquote>
-<h3 id="slideBar-侧边栏"><a href="#slideBar-侧边栏" class="headerlink" title="slideBar 侧边栏"></a>slideBar 侧边栏</h3><blockquote>
-<p>资源: <code>layouts/includes/dcfLeftBar.html</code></p>
-</blockquote>
-<p>提供功能：</p>
-<ul>
-<li>菜单</li>
-<li>动态</li>
-</ul>
-<p>提供方法：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">slideBar.init()       <span class="comment"># 渲染入口</span></div><div class="line">slideBar.init()</div></pre></td></tr></table></figure>
-<h3 id="footer"><a href="#footer" class="headerlink" title="footer"></a>footer</h3><p>1,底层全局css冗余代码<br>2，废弃图片<br>3，遮罩层bug<br>4，分页组件封装不彻底<br>5，js组件冗余清理</p>
-
+        <p>let 允许把变量的作用域限制在块级域中, const 这个声明创建一个常量,可以全局或局部的函数声明。<br><a id="more"></a></p>
+<blockquote>
+<h3 id="let"><a href="#let" class="headerlink" title="let"></a>let</h3></blockquote>
+<p>let 允许把变量的作用域限制在块级域中。与 var 不同处是：var 申明变量要么是全局的，要么是函数级的，而无法是块级的。<br>let的作用域是块，而var的作用域是函数</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> a = <span class="number">5</span>;</div><div class="line"><span class="keyword">var</span> b = <span class="number">10</span>;</div><div class="line"><span class="keyword">if</span> (a === <span class="number">5</span>) &#123;</div><div class="line">  <span class="keyword">let</span> a = <span class="number">4</span>; <span class="comment">// The scope is inside the if-block</span></div><div class="line">  <span class="keyword">var</span> b = <span class="number">1</span>; <span class="comment">// The scope is inside the function</span></div><div class="line">  <span class="built_in">console</span>.log(a);  <span class="comment">// 4</span></div><div class="line">  <span class="built_in">console</span>.log(b);  <span class="comment">// 1</span></div><div class="line">&#125; </div><div class="line"><span class="built_in">console</span>.log(a); <span class="comment">// 5</span></div><div class="line"><span class="built_in">console</span>.log(b); <span class="comment">// 1</span></div></pre></td></tr></table></figure>
+<p>let 在循环中</p>
+<p>可以使用let关键字绑定变量在循环的范围而不是使用一个全局变量(使用var)定义。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">for</span> (<span class="keyword">let</span> i = <span class="number">0</span>; i &lt; <span class="number">10</span>; i++) &#123;</div><div class="line">  <span class="built_in">console</span>.log(i); <span class="comment">// 0, 1, 2, 3, 4 ... 9</span></div><div class="line">&#125;</div><div class="line"><span class="built_in">console</span>.log(i); <span class="comment">// i is not defined</span></div></pre></td></tr></table></figure>
+<p>上面报错，因为变量i不存在于for语句外的作用域中。let创建块级作用域变量的，使用var创建一个全局变量。</p>
+<blockquote>
+<h3 id="const"><a href="#const" class="headerlink" title="const"></a>const</h3></blockquote>
+<p>const这个声明创建一个常量,可以全局或局部的函数声明。</p>
+<p>一个常量可以是全局的或者是局部的,常量遵循与变量相同的作用域规则。</p>
+<p>一个常量不可以被重新赋值,并且不能被重复声明.所以,虽然可以在声明一个常量的时候不进行初始化,但这样做是没有意义的,因为这个常量的值永远会保持undefined。</p>
+<p>一个常量不能和它所在作用域内的其他变量或函数拥有相同的名称。</p>
+<p>示例</p>
+<p>下面的例子演示了常量的行为。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">const</span> num = <span class="number">10</span>;</div><div class="line">num =<span class="number">20</span>;</div><div class="line"><span class="built_in">console</span>.log(num); <span class="comment">// 10</span></div></pre></td></tr></table></figure>
+<p>如果我们在上面声明常量num，在声明var num，这时会报错，num已经声明。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">const</span> num = <span class="number">10</span>;</div><div class="line"><span class="keyword">var</span> num = <span class="number">20</span>;</div><div class="line"><span class="built_in">console</span>.log(num); <span class="comment">// 'num' has already been declared</span></div></pre></td></tr></table></figure>
       
     </div>
 
@@ -403,6 +418,8 @@
           
             <a href="/blog/tags/文档/" rel="tag">#文档</a>
           
+            <a href="/blog/tags/工具/" rel="tag">#工具</a>
+          
         </div>
       
 
@@ -410,16 +427,16 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/blog/html/cashier-doc.html" rel="next" title="收银台前端设计文档">
-                <i class="fa fa-chevron-left"></i> 收银台前端设计文档
+              <a href="/blog/html/code-skills.html" rel="next" title="编程技巧">
+                <i class="fa fa-chevron-left"></i> 编程技巧
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/blog/html/goodArticle.html" rel="prev" title="好文推荐">
-                好文推荐 <i class="fa fa-chevron-right"></i>
+              <a href="/blog/html/express使用.html" rel="prev" title="express使用">
+                express使用 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -446,8 +463,8 @@
           
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="html/dcf-doc.html"
-           data-title="dcf doc" data-url="http://iwenjie.github.io/blog/html/dcf-doc.html">
+      <div class="ds-thread" data-thread-key="html/es61.html"
+           data-title="ES6中let、const和var的区别" data-url="http://iwenjie.github.io/blog/html/es61.html">
       </div>
     
   </div>
@@ -581,7 +598,7 @@
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#dcf相关资源目录结构"><span class="nav-number">1.</span> <span class="nav-text">dcf相关资源目录结构</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#header-头部"><span class="nav-number">2.</span> <span class="nav-text">header 头部</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#slideBar-侧边栏"><span class="nav-number">3.</span> <span class="nav-text">slideBar 侧边栏</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#footer"><span class="nav-number">4.</span> <span class="nav-text">footer</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#let"><span class="nav-number">1.</span> <span class="nav-text">let</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#const"><span class="nav-number">2.</span> <span class="nav-text">const</span></a></li></ol></div>
             
           </div>
         </section>

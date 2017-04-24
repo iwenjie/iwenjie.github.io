@@ -84,16 +84,16 @@
 
 
 
-<meta name="description" content="暂时没有介绍">
+<meta name="description" content="群星一些前端插件和服务API，使用示例，和参数说明">
 <meta property="og:type" content="article">
-<meta property="og:title" content="群星工具">
+<meta property="og:title" content="群星一些前端插件和服务API">
 <meta property="og:url" content="http://iwenjie.github.io/html/component.html">
 <meta property="og:site_name" content="❤❤❤❤❤">
-<meta property="og:description" content="暂时没有介绍">
-<meta property="og:updated_time" content="2017-01-05T06:53:57.499Z">
+<meta property="og:description" content="群星一些前端插件和服务API，使用示例，和参数说明">
+<meta property="og:updated_time" content="2017-01-11T02:06:16.291Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="群星工具">
-<meta name="twitter:description" content="暂时没有介绍">
+<meta name="twitter:title" content="群星一些前端插件和服务API">
+<meta name="twitter:description" content="群星一些前端插件和服务API，使用示例，和参数说明">
 
 
 
@@ -116,7 +116,7 @@
 
   <link rel="canonical" href="http://iwenjie.github.io/html/component.html"/>
 
-  <title> 群星工具 | ❤❤❤❤❤ </title>
+  <title> 群星一些前端插件和服务API | ❤❤❤❤❤ </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -276,7 +276,7 @@
             
             
               
-                群星工具
+                群星一些前端插件和服务API
               
             
           </h1>
@@ -288,8 +288,8 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2017-01-05T14:52:40+08:00" content="2017-01-05">
-              2017-01-05
+            <time itemprop="dateCreated" datetime="2017-01-01T16:22:48+08:00" content="2017-01-01">
+              2017-01-01
             </time>
           </span>
 
@@ -354,7 +354,23 @@
       
 
       
-        <p>暂时没有介绍<br><a id="more"></a></p>
+        <p>群星一些前端插件和服务API，使用示例，和参数说明<br><a id="more"></a></p>
+<h3 id="日期控件"><a href="#日期控件" class="headerlink" title="日期控件"></a>日期控件</h3><h5 id="依赖资源"><a href="#依赖资源" class="headerlink" title="依赖资源"></a>依赖资源</h5><p>jquery 和 select相关资源</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">link</span> <span class="attr">href</span>=<span class="string">"/assets/js/lib/jquery/plugin/select2/select2.min.css"</span> <span class="attr">rel</span>=<span class="string">"stylesheet"</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">link</span> <span class="attr">href</span>=<span class="string">"/assets/js/lib/jquery/plugin/dropdown/jquery.dropdown.css"</span> <span class="attr">rel</span>=<span class="string">"stylesheet"</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"/assets/js/lib/jquery/plugin/select2/select2-v2.min.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"/assets/js/lib/jquery/plugin/select2/i18n/zh-CN.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"/assets/js/lib/jquery/plugin/dropdown/jquery.daterange.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div></pre></td></tr></table></figure>
+<h5 id="调用示例"><a href="#调用示例" class="headerlink" title="调用示例"></a>调用示例</h5><p>html 代码</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"form-group"</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">label</span> <span class="attr">for</span>=<span class="string">""</span> <span class="attr">class</span>=<span class="string">"breakword"</span>&gt;</span>融资申请日<span class="tag">&lt;/<span class="name">label</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"btn-group"</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"input-mask"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"text"</span> <span class="attr">id</span>=<span class="string">"applyDate"</span> /&gt;</span></div><div class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div></pre></td></tr></table></figure>
+<p>input-mask实现禁用遮罩 代码如下：</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="selector-class">.input-mask</span>&#123;</div><div class="line">    <span class="attribute">position</span>: absolute;</div><div class="line">    <span class="attribute">display</span>: none;</div><div class="line">    <span class="attribute">z-index</span>: <span class="number">5</span>;</div><div class="line">    <span class="attribute">width</span>: <span class="number">100%</span>;</div><div class="line">    <span class="attribute">height</span>: <span class="number">31px</span>;</div><div class="line">    <span class="attribute">border-radius</span>: <span class="number">4px</span>;</div><div class="line">    <span class="attribute">cursor</span>: not-allowed;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//初始化</span></div><div class="line">$element.DateRange(&#123;</div><div class="line">    width: <span class="number">210</span>,  <span class="comment">//宽度</span></div><div class="line">    showClear: <span class="literal">true</span>,  <span class="comment">//是否允许清空</span></div><div class="line">    placeholder:<span class="string">'请选择XXX'</span>,</div><div class="line">    pos: <span class="function"><span class="keyword">function</span>(<span class="params">$trigger,pos</span>)</span>&#123;</div><div class="line"></div><div class="line">        <span class="keyword">var</span> screenWidth = <span class="built_in">window</span>.screen.width;</div><div class="line"></div><div class="line">        pos.left = pos.left + <span class="number">280</span> &gt; screenWidth ? pos.left - <span class="number">68</span> : pos.left;</div><div class="line"></div><div class="line">        <span class="keyword">return</span> pos;</div><div class="line">    &#125;<span class="comment">//定位信息，相对左侧偏移量</span></div><div class="line">&#125;);</div><div class="line"><span class="comment">//取值</span></div><div class="line">$element.val(); <span class="comment">//格式 2016/08/08|2016/08/08</span></div><div class="line"><span class="comment">//设值</span></div><div class="line">$element.DateRange().setValue(&#123;</div><div class="line">    startDate:<span class="keyword">new</span> <span class="built_in">Date</span>(<span class="keyword">new</span> <span class="built_in">Date</span>().getTime()<span class="number">-7</span>*<span class="number">24</span>*<span class="number">60</span>*<span class="number">60</span>*<span class="number">1000</span>),</div><div class="line">    endDate:<span class="keyword">new</span> <span class="built_in">Date</span>()</div><div class="line">&#125;);</div><div class="line"><span class="comment">//渲染日期组件下拉的初始日期指示位置</span></div><div class="line">$element.DateRange().renderBody(&#123;</div><div class="line">    date: <span class="keyword">new</span> <span class="built_in">Date</span>(<span class="keyword">new</span> <span class="built_in">Date</span>().getTime()<span class="number">-7</span>*<span class="number">24</span>*<span class="number">60</span>*<span class="number">60</span>*<span class="number">1000</span>)</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
+<h3 id="select2"><a href="#select2" class="headerlink" title="select2"></a>select2</h3><h5 id="依赖资源-1"><a href="#依赖资源-1" class="headerlink" title="依赖资源"></a>依赖资源</h5><p>jquery</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">link</span> <span class="attr">href</span>=<span class="string">"/assets/js/lib/jquery/plugin/select2/select2.min.css"</span> <span class="attr">rel</span>=<span class="string">"stylesheet"</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"/assets/js/lib/jquery/plugin/select2/select2-v2.min.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"/assets/js/lib/jquery/plugin/select2/i18n/zh-CN.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div></pre></td></tr></table></figure>
+<h5 id="调用示例-1"><a href="#调用示例-1" class="headerlink" title="调用示例"></a>调用示例</h5><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div></pre></td><td class="code"><pre><div class="line">$(<span class="string">'.xxxx'</span>).select2(&#123;</div><div class="line">    language: <span class="string">'zh-CN'</span>,</div><div class="line">    width: <span class="string">'210px'</span>,</div><div class="line">    allowClear: <span class="literal">true</span>,</div><div class="line">    placeholder: <span class="string">'请选择客户名称'</span>,</div><div class="line">    data : results1</div><div class="line">&#125;);</div><div class="line"></div><div class="line"></div><div class="line">$(<span class="string">'#xxx'</span>).select2(&#123;</div><div class="line">    language: <span class="string">'zh-CN'</span>,</div><div class="line">    width: <span class="string">'210px'</span>,</div><div class="line">    allowClear: <span class="literal">true</span>,</div><div class="line">    placeholder: <span class="string">'请选择客户名称'</span>,</div><div class="line">    dropdownParent: $(<span class="string">'.select2-box'</span>),</div><div class="line">    ajax: &#123;</div><div class="line">        url: URL.SEARCH_CUSTOMER,</div><div class="line">        type: <span class="string">'GET'</span>,</div><div class="line">        data: <span class="function"><span class="keyword">function</span> (<span class="params">params</span>) </span>&#123;</div><div class="line">            <span class="built_in">console</span>.info(params);</div><div class="line">            <span class="keyword">var</span> query = &#123;</div><div class="line">                customerName: params.term||<span class="string">''</span>,</div><div class="line">                dataSize: <span class="number">10</span>,</div><div class="line">                page: params.page</div><div class="line">            &#125;</div><div class="line">            <span class="comment">// Query paramters will be ?search=[term]&amp;page=[page]</span></div><div class="line">            <span class="keyword">return</span> query;</div><div class="line">        &#125;,</div><div class="line">        processResults: <span class="function"><span class="keyword">function</span> (<span class="params">res, params</span>) </span>&#123;</div><div class="line">            </div><div class="line">            params.page = params.page || <span class="number">1</span>;</div><div class="line"></div><div class="line">            <span class="keyword">var</span> items = []</div><div class="line">            </div><div class="line">            <span class="keyword">if</span>(res.ret == <span class="number">1</span> &amp;&amp; res.result &amp;&amp; res.result.length&gt;<span class="number">0</span>)&#123;</div><div class="line"></div><div class="line">                <span class="keyword">for</span>(<span class="keyword">var</span> i = <span class="number">0</span>; i&lt;res.result.length; i++)&#123;</div><div class="line"></div><div class="line">                    items.push(&#123;</div><div class="line">                        id: res.result[i].customerName,</div><div class="line">                        text: res.result[i].customerName</div><div class="line">                    &#125;)</div><div class="line">                &#125;</div><div class="line">                <span class="keyword">return</span> &#123;</div><div class="line">                    results: items,</div><div class="line">                    <span class="comment">// pagination: &#123;</span></div><div class="line">                        <span class="comment">// more: (params.page * 10) &lt; 20</span></div><div class="line">                    <span class="comment">// &#125;</span></div><div class="line">                &#125;;</div><div class="line">            &#125;</div><div class="line">        &#125;,</div><div class="line">        error: <span class="function"><span class="keyword">function</span>(<span class="params">res</span>)</span>&#123;</div><div class="line">            <span class="built_in">console</span>.info(<span class="string">'error'</span>);</div><div class="line">        &#125;,</div><div class="line">        delay: <span class="number">250</span>,</div><div class="line">        cache: <span class="literal">true</span></div><div class="line">    &#125;</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
+<h3 id="查看微合同服务"><a href="#查看微合同服务" class="headerlink" title="查看微合同服务"></a>查看微合同服务</h3><h5 id="依赖资源-2"><a href="#依赖资源-2" class="headerlink" title="依赖资源"></a>依赖资源</h5><p>jquery</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"/assets/js/lib/jquery/business/get-microContract/get-microContract.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div></pre></td></tr></table></figure>
+<h5 id="调用示例-2"><a href="#调用示例-2" class="headerlink" title="调用示例"></a>调用示例</h5><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">$element.showMicroContract(id,&#123;</div><div class="line">    print:<span class="literal">true</span> <span class="comment">//是否调用打印服务</span></div><div class="line">&#125;);<span class="comment">//id为单据id</span></div></pre></td></tr></table></figure>
+<h3 id="查看单据详情服务"><a href="#查看单据详情服务" class="headerlink" title="查看单据详情服务"></a>查看单据详情服务</h3><h5 id="依赖资源-3"><a href="#依赖资源-3" class="headerlink" title="依赖资源"></a>依赖资源</h5><p>jquery</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"/assets/js/lib/jquery/business/docs-detail/docs-detail.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div></pre></td></tr></table></figure>
+<h5 id="调用示例-3"><a href="#调用示例-3" class="headerlink" title="调用示例"></a>调用示例</h5><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$.ShowDocsDetail(id);<span class="comment">//id为单据id</span></div></pre></td></tr></table></figure>
 
       
     </div>
@@ -409,13 +425,17 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/blog/html/code-skills.html" rel="next" title="编程技巧">
-                <i class="fa fa-chevron-left"></i> 编程技巧
+              <a href="/blog/html/goodArticle.html" rel="next" title="好文推荐">
+                <i class="fa fa-chevron-left"></i> 好文推荐
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/blog/html/code-skills.html" rel="prev" title="编程技巧">
+                编程技巧 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -442,7 +462,7 @@
   <div class="comments" id="comments">
     
       <div class="ds-thread" data-thread-key="html/component.html"
-           data-title="群星工具" data-url="http://iwenjie.github.io/blog/html/component.html">
+           data-title="群星一些前端插件和服务API" data-url="http://iwenjie.github.io/blog/html/component.html">
       </div>
     
   </div>
@@ -487,7 +507,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/blog/archives">
-              <span class="site-state-item-count">12</span>
+              <span class="site-state-item-count">14</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -576,7 +596,7 @@
               
             
             
-              <p class="post-toc-empty">此文章未包含目录</p>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#日期控件"><span class="nav-number">1.</span> <span class="nav-text">日期控件</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#依赖资源"><span class="nav-number">1.0.1.</span> <span class="nav-text">依赖资源</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#调用示例"><span class="nav-number">1.0.2.</span> <span class="nav-text">调用示例</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#select2"><span class="nav-number">2.</span> <span class="nav-text">select2</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#依赖资源-1"><span class="nav-number">2.0.1.</span> <span class="nav-text">依赖资源</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#调用示例-1"><span class="nav-number">2.0.2.</span> <span class="nav-text">调用示例</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#查看微合同服务"><span class="nav-number">3.</span> <span class="nav-text">查看微合同服务</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#依赖资源-2"><span class="nav-number">3.0.1.</span> <span class="nav-text">依赖资源</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#调用示例-2"><span class="nav-number">3.0.2.</span> <span class="nav-text">调用示例</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#查看单据详情服务"><span class="nav-number">4.</span> <span class="nav-text">查看单据详情服务</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#依赖资源-3"><span class="nav-number">4.0.1.</span> <span class="nav-text">依赖资源</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#调用示例-3"><span class="nav-number">4.0.2.</span> <span class="nav-text">调用示例</span></a></li></ol></li></ol></li></ol></div>
             
           </div>
         </section>
